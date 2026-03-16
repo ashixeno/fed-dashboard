@@ -61,7 +61,7 @@ export default function Dashboard({ liveRates: initialLive, annotations: initial
     if (res.ok) { const a = await res.json(); setAnnotations(p=>[...p,a]) }
   }
   const handleDeleteAnnotation = async (id: number) => {
-    await fetch(\`/api/annotations?id=\${id}\`, {method:'DELETE'})
+    await fetch(`/api/annotations?id=${id}`, { method: 'DELETE' })
     setAnnotations(p=>p.filter(a=>a.id!==id))
   }
   const handleLogAlert = async (type: string, message: string, severity: string) => {
