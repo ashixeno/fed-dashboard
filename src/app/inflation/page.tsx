@@ -1,13 +1,22 @@
+'use client'
+
+import { useEffect } from 'react'
+
 export default function InflationPage() {
+  useEffect(() => {
+    window.location.href = '/inflation/index.html'
+  }, [])
+
   return (
-    <iframe
-      src="/inflation/index.html"
-      style={{
-        width: '100%',
-        height: '100vh',
-        border: 'none',
-        display: 'block',
-      }}
-    />
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      fontFamily: 'monospace',
+      color: '#1b2a4a'
+    }}>
+      Loading Inflation Dashboard...
+    </div>
   )
 }
