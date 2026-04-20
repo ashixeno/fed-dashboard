@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: '#section-mortgage',label: 'Mortgage' },
   { href: '#section-macro',   label: 'Macro' },
   { href: '#section-tools',   label: 'Alerts' },
+  { href: '/inflation',      label: 'Inflation' },
 ]
 
 export default function NavBar() {
